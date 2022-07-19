@@ -4,7 +4,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'main', url: 'https://github.com/Mikky3554/demospingbootapp.git'
+                git branch: 'main', url: 'https://github.com/Mikky3554/samplek8s.git'
           }
         }
         stage('Execute Maven') {
