@@ -1,5 +1,6 @@
 #  base image
 FROM adoptopenjdk/openjdk11:ubi
+USER root
 LABEL maintainer="Rahul Roy"
 # Set your working directory
 WORKDIR /opt/app/
