@@ -6,7 +6,7 @@ LABEL maintainer="Rahul Roy"
 WORKDIR /opt/app/
 #RUN mkdir -p /opt/app/new_directory
 # Copy the necessary jar file from Source to Target Folder 
-ADD /var/lib/jenkins/workspace/K8sDemo_Aws/target/demok8s-0.0.1-SNAPSHOT.jar /opt/app/demok8s-0.0.1-SNAPSHOT.jar
+COPY /var/lib/jenkins/workspace/K8sDemo_Aws/target/. /opt/app/demok8s-0.0.1-SNAPSHOT.jar
 #RUN cp /var/lib/jenkins/workspace/K8sDemo_Aws/target/. /opt/app/.
 #RUN mv ./target/. /opt/app/.
 EXPOSE 8083
