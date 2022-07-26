@@ -30,7 +30,7 @@ pipeline {
            // }
         stage('Build Image & Push to ECR'){
             steps {
-                sh 'sudo docker build -t mikky3554/japp:LATEST .'
+                sh 'sudo docker build -t mikky3554/K8s_App:LATEST .'
                 //sh 'sudo docker tag japp mikky3554/japp:$BUILD_NUMBER'
                 sh 'sudo docker images'
             }
