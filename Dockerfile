@@ -4,8 +4,8 @@ USER root
 LABEL maintainer="Rahul Roy"
 # Set your working directory
 WORKDIR /opt/app/
-RUN ["cp", "/var", "/opt/app/"]
-RUN $pwd
-RUN echo "Just echo while you work"
+#RUN mkdir -p /opt/app/new_directory
+# Copy the necessary jar file from Source to Target Folder 
+COPY ["./target/demok8s-0.0.1-SNAPSHOT.jar",  "/opt/app/demok8s-0.0.1-SNAPSHOT.jar"]
 EXPOSE 8084
-CMD ["java", "-jar", "app01.jar"]
+CMD ["java", "-jar", "/opt/app/demok8s-0.0.1-SNAPSHOT.jar"]
