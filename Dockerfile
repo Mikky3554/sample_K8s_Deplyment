@@ -4,7 +4,7 @@ USER root
 LABEL maintainer="Rahul Roy"
 # Set your working directory
 WORKDIR /opt/app/
-COPY *.jar  /opt/app/app01.jar
+COPY /var/lib/*.jar  /opt/app/app01.jar
 RUN $pwd
 RUN echo "Just echo while you work"
 EXPOSE 8084
