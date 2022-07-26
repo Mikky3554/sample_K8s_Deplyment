@@ -1,5 +1,5 @@
 #  base image
-FROM adoptopenjdk/openjdk11:ubi
+FROM adoptopenjdk/openjdk11:ubi AS build
 USER root
 LABEL maintainer="Rahul Roy"
 # Set your working directory
