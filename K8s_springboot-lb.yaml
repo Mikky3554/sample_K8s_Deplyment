@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8084
-# service type loadbalancer
+# service type NodePort
 ---
 apiVersion: v1
 kind: Service
@@ -31,4 +31,4 @@ spec:
     - protocol: TCP
       port: 8084
       targetPort: 8085
-  type: LoadBalancer
+  type: NodePort
