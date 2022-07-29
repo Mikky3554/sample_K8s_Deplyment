@@ -16,7 +16,7 @@ spec:
       - name: regcred
       containers:
       - name: my-java-app
-        image: 499199586988.dkr.ecr.ap-southeast-1.amazonaws.com/testpro:latest
+        image: 499199586988.dkr.ecr.ap-southeast-1.amazonaws.com/testpro@sha256:8a0e39b2cd75c6fd8b8b99fd3d4ab9634d2a93a82a8cb5a96bb405e54f7f9fef
         imagePullPolicy: Always
         ports:
         - containerPort: 8084
