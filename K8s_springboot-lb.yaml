@@ -18,6 +18,8 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8084
+        imagePullSecrets:
+          - name: regcred
 # service type NodePort
 ---
 apiVersion: v1
