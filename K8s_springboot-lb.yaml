@@ -12,14 +12,14 @@ spec:
       labels:
         app: java-app
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
       - name: my-java-app
         image: 499199586988.dkr.ecr.ap-southeast-1.amazonaws.com/testpro:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8084
-        imagePullSecrets:
-          - name: regcred
 # service type NodePort
 ---
 apiVersion: v1
