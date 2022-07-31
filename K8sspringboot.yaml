@@ -39,7 +39,6 @@ metadata:
 spec: 
   ports: 
     - 
-      NodePort: 31479
       port: 8080
       targetPort: 8084
   selector: 
