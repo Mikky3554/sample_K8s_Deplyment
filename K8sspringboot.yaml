@@ -40,9 +40,9 @@ spec:
   selector:
     app: java-app
   ports:
-    - protocol: TCP
-      port: 8085
-      targetPort: 8084
+     - NodePort: 31479
+       port: 8080
+       targetPort: 8084
   type: NodePort
 # HPA config
 ---
