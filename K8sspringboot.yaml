@@ -29,7 +29,7 @@ spec:
               memory: 1000Mi
       imagePullSecrets:
         -
-          name: regcred
+          name: regcred01
 # service type NodePort
 ---
 apiVersion: v1
@@ -37,6 +37,7 @@ kind: Service
 metadata:
   name: java-app-svc
 spec:
+  type: NodePort
   selector:
     app: java-app
   ports:
