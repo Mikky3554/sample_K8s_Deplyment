@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         -
-          image: "499199586988.dkr.ecr.ap-southeast-1.amazonaws.com/testpro:latest"
+          image: 499199586988.dkr.ecr.ap-southeast-1.amazonaws.com/testpro:latest
           imagePullPolicy: Always
           name: my-java-app
           ports:
