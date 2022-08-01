@@ -30,6 +30,21 @@ spec:
       imagePullSecrets:
         -
           name: regcred01
+--- 
+apiVersion: v1
+kind: Service
+metadata: 
+  name: my-java-svc
+spec: 
+  ports: 
+    - 
+      name: 8084
+      port: 8080
+      protocol: TCP
+      targetPort: 8084
+  selector: 
+    app: java-app
+  type: ClusterIP          
 # service type NodePort
 ---
 apiVersion: networking.k8s.io/v1
