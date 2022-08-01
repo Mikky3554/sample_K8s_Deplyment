@@ -32,18 +32,23 @@ spec:
           name: regcred01
 # service type NodePort
 ---
-apiVersion: v1
-kind: Service
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata: 
-  name: java-app-svc
+  name: java-app-svc-ingress
 spec: 
-  ports: 
+  rules: 
     - 
-      port: 8080
-      targetPort: 8084
-  selector: 
-    app: java-app
-  type: LoadBalancer
+      http: 
+        paths: 
+          - 
+            backend: 
+              service: 
+                name: java-app
+                port: 
+                  number: 80
+            path: /
+            pathType: Prefix
 # HPA config
 ---
 apiVersion: autoscaling/v2
