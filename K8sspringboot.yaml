@@ -46,7 +46,7 @@ spec:
               service: 
                 name: java-app
                 port: 
-                  number: 80
+                  number: 8084
             path: /
             pathType: Prefix
 # HPA config
