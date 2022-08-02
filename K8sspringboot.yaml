@@ -31,16 +31,16 @@ spec:
         -
           name: regcred01
 # service type NodePort
----
+--- 
 apiVersion: v1
 kind: Service
 metadata: 
-  name: default-http-backed
+  name: java-app-svc
 spec: 
   ports: 
     - 
-      port:80
-      targetPort: 8084  
+      port: 8080
+      targetPort: 8084
   selector: 
     app: java-app
   type: NodePort
