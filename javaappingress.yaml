@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: java-app-ingress
-  namespace: myy-java-appp
+  namespace: springbootjavaapp
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
