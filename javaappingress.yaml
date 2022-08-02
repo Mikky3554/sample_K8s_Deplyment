@@ -5,7 +5,7 @@ metadata:
   annotations: 
     kubernetes.io/ingress.class: nginx
   name: java-app-ingress
-  namespace: my-java-appp
+  namespace: springbootjavaapp
 spec: 
   rules: 
     - 
