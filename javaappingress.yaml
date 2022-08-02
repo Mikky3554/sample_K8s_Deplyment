@@ -1,17 +1,17 @@
-apiVersion: networking.k8s.io/v1
+--- 
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
-metadata:
+metadata: 
   name: java-app-ingress
-  namespace: springbootjavaapp
-spec:
-  rules:
-  - host: kltf.co.uk
-    http:
-      paths:
-      - path: /
-        pathType: Exact  
-        backend:
-          service:
-            name: java-app-svc
-            port: 
-              number: 80
+  namespace: my-java-appp
+spec: 
+  rules: 
+    - 
+      host: kltf.co.uk
+      http: 
+        paths: 
+          backend: 
+            - 
+              service: 
+                name: java-app-svc
+                port: 8080
