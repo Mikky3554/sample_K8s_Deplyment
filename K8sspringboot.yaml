@@ -41,6 +41,7 @@ spec:
     - 
       nodePort: 31234
       port: 8080
+      protocol: TCP
       targetPort: 8084
   selector: 
     app: java-app
