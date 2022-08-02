@@ -35,11 +35,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  name: java-app-svc
+  name: default-http-backed
 spec: 
   ports: 
     - 
-      port: 8080	
+      port:80
       targetPort: 8084  
   selector: 
     app: java-app
