@@ -43,7 +43,7 @@ spec:
       targetPort: 8084  
   selector: 
     app: java-app
-  type: NodePort
+  type: ClusterIP
 # HPA config
 ---
 apiVersion: autoscaling/v2
