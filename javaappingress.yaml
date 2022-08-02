@@ -9,7 +9,7 @@ metadata:
 spec: 
   rules: 
     - 
-      host: kltf.com
+      host: kltf.co.uk
       http: 
         paths: 
           - 
