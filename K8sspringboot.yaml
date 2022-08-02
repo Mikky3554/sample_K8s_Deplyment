@@ -19,7 +19,7 @@ spec:
           name: my-java-app
           ports:
             -
-              containerPort: 8080
+              containerPort: 8084 
           resources:
             limits:
               cpu: 500m
@@ -29,9 +29,9 @@ spec:
               memory: 1000Mi
       imagePullSecrets:
         -
-          name: regcred01
+          name: regcred01 
 # service type NodePort
---- 
+---
 apiVersion: v1
 kind: Service
 metadata: 
@@ -39,12 +39,11 @@ metadata:
 spec: 
   ports: 
     - 
-      name: http
-      port: 80
-      protocol: TCP
-      targetPort: 8080
+      port: 8080	
+      targetPort: 8084  
   selector: 
     app: java-app
+  type: NodePort
 # HPA config
 ---
 apiVersion: autoscaling/v2
