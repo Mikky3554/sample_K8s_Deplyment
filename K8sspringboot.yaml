@@ -39,8 +39,9 @@ metadata:
 spec: 
   ports: 
     - 
-      port: 8080	
-      targetPort: 8084  
+      nodePort: 31234
+      port: 8080
+      targetPort: 8084
   selector: 
     app: java-app
   type: NodePort
@@ -57,7 +58,7 @@ spec:
       resource:
         name: cpu
         target:
-          averageUtilization: 50
+          averageUtilization: 20
           type: Utilization
       type: Resource
   minReplicas: 1
