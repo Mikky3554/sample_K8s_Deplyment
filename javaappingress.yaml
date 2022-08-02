@@ -5,7 +5,7 @@ metadata:
   namespace: springbootjavaapp
 spec:
   rules:
-  - host: kltf.com
+  - host: kltf.co.uk
     http:
       paths:
       - path: /
@@ -14,4 +14,4 @@ spec:
           service:
             name: java-app-svc
             port: 
-              number: 8080
+              number: 80
