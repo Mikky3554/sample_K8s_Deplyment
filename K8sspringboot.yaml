@@ -22,10 +22,10 @@ spec:
               containerPort: 8084 
           resources:
             limits:
-              cpu: 500m
+              cpu: 512mi
               memory: 3000Mi
             requests:
-              cpu: 250m
+              cpu: 256mi
               memory: 1000Mi
       imagePullSecrets:
         -
